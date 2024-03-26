@@ -1,0 +1,4 @@
+name: GiveAway
+version: '${version}'
+main: com.phdljr.giveaway.GiveAway
+api-version: '1.20'
