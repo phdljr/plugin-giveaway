@@ -2,3 +2,23 @@ name: GiveAway
 version: '${version}'
 main: com.phdljr.giveaway.GiveAway
 api-version: '1.20'
+commands:
+  giveaway:
+    description: "핫타임 관련 GUI를 보여줍니다."
+    usage: "/giveaway"
+    aliases: [ 핫타임 ]
+    permission: giveaway.use
+    permission-message: "권한이 없습니다."
+  giveawayadmin:
+    description: "핫타임을 진행 및 설정합니다."
+    usage: "/giveawayadmin [run|runafter <time_in_seconds>|cancel]"
+    permission: giveaway.admin
+    permission-message: "권한이 없습니다."
+
+permissions:
+  giveaway.use:
+    description: "핫타임 관련 GUI를 보여줍니다."
+    default: false
+  giveaway.admin:
+    description: "핫타임을 진행 및 설정합니다."
+    default: false
